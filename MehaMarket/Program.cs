@@ -40,6 +40,7 @@ namespace MehaMarket
                 {
                     while (secim == "e")
                     {
+                        Console.Clear();
                         Urun[] u = d.UrunEkle();
                         Urun[] gecici = new Urun[u.Length + 1];
                         Array.Copy(u, gecici, u.Length);
@@ -58,12 +59,22 @@ namespace MehaMarket
                         Console.WriteLine();
                         Console.Write("KDV %sini Giriniz : ");
                         urun.kdv = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine();
+                        Console.WriteLine("ÜRÜN EKLEME İŞLEMİNE DEVAM ETMEK İSTER MİSİNİZ? E/H ");
+                        secim = Console.ReadLine();
+                        secim.ToLower();
 
                     }
 
                 }
                 else if (secenek == "2")
                 {
+
+                    Console.Clear();
+
+                    Urun urun = new Urun();
+                    
+                    Console.WriteLine(urun.FiyatGuncelle());
 
                 }
                 else if (secenek == "3")

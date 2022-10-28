@@ -6,3 +6,11 @@ C:\Users\DELL\Documents\GitHub\MehaMarket\MehaMarket\obj\Debug\MehaMarket.csproj
 C:\Users\DELL\Documents\GitHub\MehaMarket\MehaMarket\obj\Debug\MehaMarket.csproj.CoreCompileInputs.cache
 C:\Users\DELL\Documents\GitHub\MehaMarket\MehaMarket\obj\Debug\MehaMarket.exe
 C:\Users\DELL\Documents\GitHub\MehaMarket\MehaMarket\obj\Debug\MehaMarket.pdb
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\MehaMarket\MehaMarket\bin\Debug\MehaMarket.exe.config
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\MehaMarket\MehaMarket\bin\Debug\MehaMarket.exe
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\MehaMarket\MehaMarket\bin\Debug\MehaMarket.pdb
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\MehaMarket\MehaMarket\obj\Debug\MehaMarket.csproj.AssemblyReference.cache
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\MehaMarket\MehaMarket\obj\Debug\MehaMarket.csproj.SuggestedBindingRedirects.cache
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\MehaMarket\MehaMarket\obj\Debug\MehaMarket.csproj.CoreCompileInputs.cache
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\MehaMarket\MehaMarket\obj\Debug\MehaMarket.exe
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\MehaMarket\MehaMarket\obj\Debug\MehaMarket.pdb

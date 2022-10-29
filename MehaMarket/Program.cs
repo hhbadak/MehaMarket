@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MehaMarket
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -69,23 +69,57 @@ namespace MehaMarket
                 }
                 else if (secenek == "2")
                 {
-
                     Console.Clear();
 
                     Urun urun = new Urun();
-                    
-                    Console.WriteLine(urun.FiyatGuncelle());
 
+                    Console.WriteLine(urun.FiyatGuncelle());
+                    Console.Clear();
                 }
                 else if (secenek == "3")
                 {
+                    Console.Clear();
 
+                    Urun urun = new Urun();
+
+                    Console.WriteLine(urun.StokGuncelle());
+                    Console.Clear();
                 }
-
             }
             else if (secenek == "2")
             {
-
+                Depo s = new Depo();
+                Urun[] u = s.UrunEkle();
+                string urunTopla = "";
+                double toplam = 0;
+                while (secim == "e")
+                {
+                    for (int i = 0; i < u.Length; i++)
+                    {
+                        Console.WriteLine($"{i + 1}-) {u[i].ad}({u[i].birim})   \t = {u[i].fiyat}TL\t   \t Kalan Stok Miktarı {u[i].stok}");
+                    }
+                    Console.WriteLine("ALMAK İSTEDİĞİNİZ ÜRÜNÜ TUŞLAYINIZ");
+                    int uruno = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine($"Kaç {u[uruno - 1].birim} {u[uruno - 1].ad} Almak İstersiniz?");
+                    int kacBirim = Convert.ToInt32(Console.ReadLine());
+                    if (u[uruno - 1].stok >= kacBirim)
+                    {
+                        double fiyatTopla = u[uruno - 1].fiyat * kacBirim;
+                        u[uruno - 1].stok = u[uruno - 1].stok - kacBirim;
+                        urunTopla = ($"{kacBirim} {u[uruno - 1].birim} ") + (u[uruno - 1].ad) + "\n" + urunTopla;
+                        toplam = (u[uruno-1].fiyat * kacBirim) + toplam;
+                        Console.WriteLine($"{kacBirim} {u[uruno - 1].birim} {u[uruno - 1].ad} Ürünü {fiyatTopla} TL. \n Başka Ürün Almnak İster misiniz? E/H");
+                        secim = Console.ReadLine();
+                        Console.Clear();
+                    }
+                    else if (u[uruno - 1].stok < kacBirim)
+                    {
+                        Console.WriteLine("Seçilen Üründe İstediğiniz Miktarda Ürün Bulunamamaktadır. ALışverişe Devam Etmek İster misiniz? E/H ");
+                        secim = Console.ReadLine();
+                        Console.Clear();
+                    }
+                }
+                Console.WriteLine($"ALDIĞINIZ ÜRÜNLER\n{urunTopla} {toplam} TL\nBizi Tercih Ettiğiniz İçin Teşekkürler :)");
             }
             else
             {

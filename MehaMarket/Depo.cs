@@ -61,7 +61,7 @@ namespace MehaMarket
             };
             u[6] = new Urun()
             {
-                ad = "Süt",
+                ad = "Süt  ",
                 birim = "LT",
                 fiyat = 14,
                 stok = 9,
@@ -69,7 +69,7 @@ namespace MehaMarket
             };
             u[7] = new Urun()
             {
-                ad = "Kola",
+                ad = "Kola ",
                 birim = "LT",
                 fiyat = 25,
                 stok = 42,
@@ -77,7 +77,7 @@ namespace MehaMarket
             };
             u[8] = new Urun()
             {
-                ad = "su",
+                ad = "su   ",
                 birim = "LT",
                 fiyat = 3,
                 stok = 145,
